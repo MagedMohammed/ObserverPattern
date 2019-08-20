@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D0E82522230BEA4F00B4738E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E82521230BEA4F00B4738E /* main.swift */; };
+		D0E82529230BEE2100B4738E /* BinaryObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E82528230BEE2100B4738E /* BinaryObserver.swift */; };
+		D0E8252B230BEE4000B4738E /* HexaObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8252A230BEE4000B4738E /* HexaObserver.swift */; };
+		D0E8252D230BEE5400B4738E /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8252C230BEE5400B4738E /* Observer.swift */; };
+		D0E8252F230BEE9000B4738E /* OctalObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E8252E230BEE9000B4738E /* OctalObserver.swift */; };
+		D0E82531230BEEDD00B4738E /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E82530230BEEDD00B4738E /* Subject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0E8251E230BEA4F00B4738E /* OpserverPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpserverPattern; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E8251E230BEA4F00B4738E /* ObserverPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ObserverPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E82521230BEA4F00B4738E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D0E82528230BEE2100B4738E /* BinaryObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryObserver.swift; sourceTree = "<group>"; };
+		D0E8252A230BEE4000B4738E /* HexaObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexaObserver.swift; sourceTree = "<group>"; };
+		D0E8252C230BEE5400B4738E /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		D0E8252E230BEE9000B4738E /* OctalObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctalObserver.swift; sourceTree = "<group>"; };
+		D0E82530230BEEDD00B4738E /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +51,7 @@
 		D0E82515230BEA4F00B4738E = {
 			isa = PBXGroup;
 			children = (
-				D0E82520230BEA4F00B4738E /* OpserverPattern */,
+				D0E82520230BEA4F00B4738E /* ObserverPattern */,
 				D0E8251F230BEA4F00B4738E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,25 +59,30 @@
 		D0E8251F230BEA4F00B4738E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0E8251E230BEA4F00B4738E /* OpserverPattern */,
+				D0E8251E230BEA4F00B4738E /* ObserverPattern */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D0E82520230BEA4F00B4738E /* OpserverPattern */ = {
+		D0E82520230BEA4F00B4738E /* ObserverPattern */ = {
 			isa = PBXGroup;
 			children = (
 				D0E82521230BEA4F00B4738E /* main.swift */,
+				D0E82530230BEEDD00B4738E /* Subject.swift */,
+				D0E82528230BEE2100B4738E /* BinaryObserver.swift */,
+				D0E8252A230BEE4000B4738E /* HexaObserver.swift */,
+				D0E8252C230BEE5400B4738E /* Observer.swift */,
+				D0E8252E230BEE9000B4738E /* OctalObserver.swift */,
 			);
-			path = OpserverPattern;
+			path = ObserverPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D0E8251D230BEA4F00B4738E /* OpserverPattern */ = {
+		D0E8251D230BEA4F00B4738E /* ObserverPattern */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0E82525230BEA4F00B4738E /* Build configuration list for PBXNativeTarget "OpserverPattern" */;
+			buildConfigurationList = D0E82525230BEA4F00B4738E /* Build configuration list for PBXNativeTarget "ObserverPattern" */;
 			buildPhases = (
 				D0E8251A230BEA4F00B4738E /* Sources */,
 				D0E8251B230BEA4F00B4738E /* Frameworks */,
@@ -77,9 +92,9 @@
 			);
 			dependencies = (
 			);
-			name = OpserverPattern;
+			name = ObserverPattern;
 			productName = OpserverPattern;
-			productReference = D0E8251E230BEA4F00B4738E /* OpserverPattern */;
+			productReference = D0E8251E230BEA4F00B4738E /* ObserverPattern */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +112,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D0E82519230BEA4F00B4738E /* Build configuration list for PBXProject "OpserverPattern" */;
+			buildConfigurationList = D0E82519230BEA4F00B4738E /* Build configuration list for PBXProject "ObserverPattern" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -109,7 +124,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D0E8251D230BEA4F00B4738E /* OpserverPattern */,
+				D0E8251D230BEA4F00B4738E /* ObserverPattern */,
 			);
 		};
 /* End PBXProject section */
@@ -119,7 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E82529230BEE2100B4738E /* BinaryObserver.swift in Sources */,
+				D0E8252F230BEE9000B4738E /* OctalObserver.swift in Sources */,
+				D0E8252D230BEE5400B4738E /* Observer.swift in Sources */,
 				D0E82522230BEA4F00B4738E /* main.swift in Sources */,
+				D0E82531230BEEDD00B4738E /* Subject.swift in Sources */,
+				D0E8252B230BEE4000B4738E /* HexaObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +282,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D0E82519230BEA4F00B4738E /* Build configuration list for PBXProject "OpserverPattern" */ = {
+		D0E82519230BEA4F00B4738E /* Build configuration list for PBXProject "ObserverPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0E82523230BEA4F00B4738E /* Debug */,
@@ -271,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D0E82525230BEA4F00B4738E /* Build configuration list for PBXNativeTarget "OpserverPattern" */ = {
+		D0E82525230BEA4F00B4738E /* Build configuration list for PBXNativeTarget "ObserverPattern" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D0E82526230BEA4F00B4738E /* Debug */,
